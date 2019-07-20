@@ -1,0 +1,5 @@
+jieba
+numpy
+pandas
+pymysql
+scikit-learn=0.20

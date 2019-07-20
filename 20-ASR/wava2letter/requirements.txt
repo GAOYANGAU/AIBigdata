@@ -1,0 +1,4 @@
+tensorflow
+sonopy
+scipy
+tqdm

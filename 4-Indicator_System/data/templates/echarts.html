@@ -1,0 +1,85 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="/static/js/echarts.min.js"></script>
+</head>
+<body>
+    <h3 style="...">糯米手机销售数据</h3>
+    <form action="/echarts/" method="post">
+        <select name="score_name" >
+            <option value ="time_rollup">按时间上卷</option>
+            <option value ="time_drilldown">按时间下钻</option>
+            <option value ="location_rollup">按销售地上卷</option>
+            <option value ="location_drilldown">按销售地下钻</option>            
+            <input type="submit" value="提交"/>
+        </select>
+    </form>
+
+{#    <button type="button" onclick="submit()">提交</button>#}
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var data = {{data|safe}};
+
+        var myChart = echarts.init(document.getElementById('main'));
+
+
+        function serie_func(item_time, item_number){
+        	var serie = []
+
+        	for(var i = 0; i < item_time.length; i++){
+
+        		var item = {
+        			name : item_time[i],
+        			type : 'bar',
+        			data : item_number[i]
+        		}
+        		serie.push(item);
+        	}
+        	return serie;
+        }
+
+
+        var option = {
+        	title : {
+                text: data['option'],
+                subtext: '数据纯属虚构'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:data['time']
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: false}
+                }
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'value',
+                    boundaryGap : [0, 0.01]
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'category',
+                    data : data['city']
+                }
+            ],
+            series : serie_func(data['time'], data['number'])
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
