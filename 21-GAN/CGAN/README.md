@@ -1,4 +1,6 @@
 # Conditional Generative Adversarial Networks
+该章节代码负责人： 海阔心 841101036@qq.com  
+
 此项目是基于Tensorflow、keras的[Conditional Generative Adversarial Networks](https://arxiv.org/abs/1411.1784)实现。
 
 ## 网络架构
