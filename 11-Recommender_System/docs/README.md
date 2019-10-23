@@ -1,4 +1,5 @@
 # 0 推荐系统概述
+该章节代码负责人： 潘云嵩 yunsong_nuaa@163.com、林琳 sophielinlin@outlook.com、陈浪  chenlangscu@163.com、邵晨光 506844874@qq.com
 
     RecommendEngine新闻推荐引擎，有两个流程构成：
     1 粗排：根据所有用户的点击行为，采用Item CF算法召回新闻，构成召回候选集。
