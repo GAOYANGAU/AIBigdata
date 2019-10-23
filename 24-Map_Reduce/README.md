@@ -1,3 +1,5 @@
+该章节代码负责人： 李斯朗 550302989@qq.com
+
 本地测试：
 cat test.txt |./mapper.py | sort |./reducer.py
 Tips：未加执行权限时可通过cat test.txt |python mapper.py |sort | python reducer.py 命令运行，其中python为指定的解释器
