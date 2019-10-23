@@ -1,4 +1,5 @@
 # TextCNN 算法说明
+该章节代码负责人： 宋超 rogerspy@163.com 
 
 ## 1、功能
 
