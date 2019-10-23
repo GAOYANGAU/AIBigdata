@@ -1,4 +1,6 @@
 ## 本章节代码项目：
+该章节代码负责人： 陆瑾  leenlutop@Outlook.com
+
 1.Cifar-10           分类模型
 2.FCN8-32            图像分割
 3.Facenet            人脸检测、识别
