@@ -1,4 +1,6 @@
 # Generative Adversarial Nets
+该章节代码负责人： 海阔心 841101036@qq.com  
+
 此项目思想来源于[Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)，是以GAN的思路拟合y=x^2 + b 的一个tensorflow、keras实现。
 
 ## 网络架构
