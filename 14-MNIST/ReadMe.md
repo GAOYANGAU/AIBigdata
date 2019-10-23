@@ -1,4 +1,5 @@
 ### MNIST手写数字识别
+该章节代码负责人：郑辉 phoenix_zh@foxmail.com
 
 #### 项目结构
 
