@@ -1,4 +1,6 @@
 # Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network
+该章节代码负责人： 海阔心 841101036@qq.com  
+
 此项目是基于Tensorflow、keras的[Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial](https://arxiv.org/abs/1609.04802)实现。
 
 ## 网络架构
