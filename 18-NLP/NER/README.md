@@ -1,5 +1,5 @@
 # BiLSTM-CRF-NER模型文档说明
-
+该章节代码负责人： 宋超 rogerspy@163.com
 
 ## 0、keras_contrib安装
 
