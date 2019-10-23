@@ -1,4 +1,6 @@
 1.使用说明
+该章节代码负责人： 杨向东 835538502@qq.com
+
 如果读者想要了解Mnist数据集的大小，维度描述，或者存原始图片，可以执行mnist_data_processing.py脚本.
 原始图片会保存到：mnist_data_images文件夹下.
 2.Reference
