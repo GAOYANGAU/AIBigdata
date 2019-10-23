@@ -1,4 +1,6 @@
 ## 本章节代码项目：
+该章节代码负责人： 徐潇宇 ewan_xu@outlook.com
+
 Tacotron2 TTS语音合成训练和预测代码
 
 ## 训练数据快捷获取
